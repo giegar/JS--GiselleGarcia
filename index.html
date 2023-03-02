@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    
+    <!-- FUENTES IMPORTADAS DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,200;0,600;1,200;1,600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Café y Tinta</title>
+</head>
+<body class="grilla">
+    <header>
+            <img class="logo" src="/img/logo1.png" />
+            <div class="menu">
+                <ul class="ul">
+                    <li class="li">Inicio</li>
+                    <li class="li">Ubicación</li>
+                    <li class="li">Contacto</li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <h2 class="titulo"> Catálogo de libros </h2>
+        <div id="contenedorLibros">
+            <!-- Cards desde JS -->
+        </div>
+    </main>
+    <aside class="seccionCarrito">
+        <h3 class="titulo">Mi carrito</h3>
+        <div id="divCarrito" >
+            <!--Mostrar carrito desde JS-->
+        </div>
+        <div class="carritoFooter">
+            <p class="total">Subtotal: $<span id="totalCarrito"></span></p>
+            <div class="divBotonesCarrito">
+                <button class="botonEstilo botonProducto" id="limpiarCarrito"><img src="img/TrashDeleteBin.svg"></button>
+                <button class="botonEstilo botonProducto" id="finalizarCarrito"><img src="img/CheckGoodYes.svg"></button>
+            </div>
+        </div>
+    </aside>
+    <footer>
+            <img class="logo" src="/img/logo1.png" />
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

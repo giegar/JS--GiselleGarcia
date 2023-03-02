@@ -1,0 +1,169 @@
+/* 
+----- PALETA DE COLORES -----
+Negro --> #0C0D11
+Gris claro --> #ADACA6
+Morado --> #78339E
+Blanco --> #f5eded
+
+----- TIPOGRAFIAS IMPORTADAS DE GOOGLE FONTS -----
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/*----- Estilo general -----*/
+
+/*-- GRID --*/
+.grilla{
+    display: grid;  
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 13vh auto 20vh;
+    grid-row-gap: 2%;
+    grid-template-areas:
+    "header carrito"
+    "main carrito"
+    "footer footer";
+}
+header{
+    grid-area: header;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #79339e;
+    }
+main{
+    grid-area: main;
+    height: auto;
+}
+.seccionCarrito{
+    grid-area: carrito;
+    height: 98vh;
+    width: 25%;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: #f5eded;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: auto;
+}
+footer{
+    grid-area: footer;
+}
+
+/*-- STYLE --*/
+.logo{
+    width: 17rem;
+    margin: .5rem;
+}
+.menu{
+    display: flex;
+    padding: .5rem;
+    margin: .5rem;
+
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+}
+.li{
+    margin:1rem;
+    padding: 0.5rem;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.li:hover{
+    color: white;
+}
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+}
+.botonEstilo{
+    color: white;
+    background-color: #79339e7c;
+    border-width: 0px;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:800; 
+}
+.botonEstilo:hover{
+    background-color: #79339e;
+}
+
+/*----- Cards de productos -----*/
+.cards {
+    display: inline-block;
+    background-color: #ADACA6;
+    border-radius: 1rem;
+    font-family: 'Playfair Display', serif;
+    padding: 1rem;
+    margin: 1rem;
+    text-align:center;
+}
+.imgcards{
+    width: 15em;
+}
+.botonProducto{
+    padding: 0.6rem;
+    margin: 0.2rem;
+}
+/*----- Carrito y sus cards -----*/
+.divBotonesCarrito{
+    display: flex;
+    flex-direction: row;
+}
+.cardsCarrito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ADACA6;
+    border-radius: 1rem;
+    font-family: 'Playfair Display', serif;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.imgcarrito{
+    width: 7em;
+}
+.alinearContenido{
+    flex-direction: column;
+    padding: .5rem;
+}
+.alinearInfo{
+    flex-direction: column;
+    margin-left: .6rem;
+}
+.alinearBotones{
+    flex-direction: row;
+}
+.total{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin: 0.5rem; 
+    padding: 0.5rem;
+}
+.botonCarrito{
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+.carritoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    background-color: #ADACA6;
+}
